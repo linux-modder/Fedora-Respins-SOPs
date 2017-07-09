@@ -6,6 +6,6 @@
 
 Absolutely NO KEYS are provided in this repository, or on the respective hosts, unless otherwise denoted.
 
-ANY AND ALL Requests for host access MUST be requested for and approved by an admin-member and/or sysadmin-member.
+ANY AND ALL Requests for host access MUST be requested for and approved by an administrator or sponsor as seen at: https://admin.fedoraproject.org/accounts/group/members/respins-sig/.
 
  
