@@ -23,4 +23,4 @@ Neal Gompa: fasid ngompa  -- Long time tester, co-maintainer of livecd-creator
 
 Aidan Kahrs: fasid abkahrs, irc: axk4545  -- Joined as lead developer of TigerOS, a RIT LUG remix of Fedora, and became a core seeder and promoter
 
-Corey Sheldon fasid:linuxmodder -- Backup for Ben Williams & Dan Mossor, Documentation, seeder
+Corey Sheldon fasid:linuxmodder -- Backup for Dan Mossor, Documentation, seeder
