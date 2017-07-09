@@ -13,7 +13,7 @@ Wendy Zazen: fasid bodhizazen -- Mentor, donated host for initial build deployme
 
 Phil Seymour: fasid short-bike -- Present Testing Lead, seeder
 
-Thomas Gilliard: fasid satellit -- Long time test, primary tester for SOAS thru early 2017
+Thomas Gilliard: fasid satellit -- Long time tester, primary tester for SOAS thru early 2017
 
 Levi Pihema-Lindsay: fasid td512 -- Maintains seeder host outside the North-American Continent in NZ
 
