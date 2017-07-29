@@ -1,0 +1,16 @@
+This repository is meant to allow you to scrape just the needed scripts to setup your Respins Mirror / Builder and assumes you have the needed underlying bits installed.  If not, or unsure refer to the main README.
+
+PRs for specialized KS files or requests for help on understanding or making your own are welcome as issue tickets, for PRs the SIG requests that you fork and PR as the SIG prevents non SIG members from direct push access.
+
+Feel free to reach out to us over on IRC as well. [[ ircs://chat.freenode.net/#fedora-respins ]].
+
+- buildmedia.sh 
+	Basic, legacy build script that builds only the ISOs using a network source (namely mirrors, but could be repointed to an nfs share)
+
+- buildmedia-all.sh
+	All of buildmedia.sh but also ADDS the torrent generation aspect, along with moving the (release and test) ISOs to the respective webserver for testing, additional seeding/webserving.
+
+- buildmediap.sh
+	This combines the pungirun.sh with buildmedia-all.sh to be a all in one script.
+
+

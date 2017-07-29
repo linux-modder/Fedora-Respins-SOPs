@@ -1,0 +1,8 @@
+This repository is meant to allow you to scrape just the needed scripts to setup your Respins Mirror / Builder and assumes you have the needed underlying bits installed.  If not, or unsure refer to the main README.
+
+PRs for specialized KS files or requests for help on understanding or making your own are welcome as issue tickets, for PRs the SIG requests that you fork and PR as the SIG prevents non SIG members from direct push access.
+
+Feel free to reach out to us over on IRC as well. [[ ircs://chat.freenode.net/#fedora-respins ]].
+
+
+
