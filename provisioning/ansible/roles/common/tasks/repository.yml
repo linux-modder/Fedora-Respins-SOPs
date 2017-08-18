@@ -4,6 +4,6 @@
 - name: ensure all updates are applied
   become: true
   dnf:
-    name: *
-    state: latest
+    name=*
+    state=latest
   
