@@ -3,5 +3,5 @@
 - name: restart the openssh daemon
   become: true
   service:
-    name=ssh
+    name=sshd
     state=restarted
