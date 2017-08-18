@@ -27,7 +27,7 @@
 - name: start and enable the openssh daemon
   become: true
   service:
-    name=ssh
+    name=sshd
     state=started
     enabled=true
 
