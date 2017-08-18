@@ -1,0 +1,9 @@
+---
+# install base packages for respin'
+- name: install core tools used in the respin process
+  become: true
+  dnf:
+    name={{ item }}
+    state=latest
+  with_items:
+    - git
