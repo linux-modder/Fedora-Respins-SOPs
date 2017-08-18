@@ -13,7 +13,7 @@ Disable Lassie booting in the Linode console. Login and ensure the node will be 
 ```shell
 ssh root@$loc.fspin.org
 hostnamectl set-hostname $loc.fspin.org
-dnf -y install kernel-core grub2
+dnf -y install kernel-core grub2 ansible libselinux-python
 shutdown -h now
 ```
 
@@ -24,7 +24,22 @@ Go into the configuration profile and change the kernel to boot to GRUB 2. Conne
 enforcing=0 autorelabel=1
 ```
 
-This will auto-reboot. Enable Lassie booting. Boot the Linode.
+This will auto-reboot, ending in an offline node. Enable Lassie booting. Boot the Linode.
 
 ### Run ansible Initial Configuration
+Run the initial configuration to create users and install base programs.
+
+Create a user with sudo to run the playbook:
+
+```shell
+useradd $user
+usermod $user -a -G wheel
+passwd $user
+```
+Run the playbook as the user:
+
+```shell
+
+
+```
 
