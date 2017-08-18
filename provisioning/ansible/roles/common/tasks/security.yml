@@ -15,7 +15,7 @@
     enabled=true
 
 - name: configure the openssh daemon
-  sudo: true
+  become: true
   copy:
     src=security/sshd_config.j2
     dest=/etc/ssh/sshd_config
@@ -25,7 +25,7 @@
   notify: restart the openssh daemon
 
 - name: start and enable the openssh daemon
-  sudo: true
+  become: true
   service:
     name=ssh
     state=started
