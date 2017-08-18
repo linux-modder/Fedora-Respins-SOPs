@@ -1,0 +1,10 @@
+---
+# These are common plays that will be run on all nodes.
+
+- include: repository.yml
+
+- include: base_packages.yml
+
+- include: security.yml
+
+- include: tools.yml

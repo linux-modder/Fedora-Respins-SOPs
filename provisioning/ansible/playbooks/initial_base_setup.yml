@@ -1,0 +1,8 @@
+---
+# setup the base server
+
+- roles:
+    - common
+    - users
+  vars_files:
+    - ../playbooks/group_vars/initial_base_setup.yml
