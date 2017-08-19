@@ -1,0 +1,33 @@
+---
+# configure any security related options
+
+- name: install denyhosts
+  become: true
+  dnf:
+    name: denyhosts
+    state: latest
+
+- name: start and enable the denyhosts daemon
+  become: true
+  service:
+    name=denyhosts
+    state=started
+    enabled=true
+
+- name: configure the openssh daemon
+  become: true
+  copy:
+    src=security/sshd_config.j2
+    dest=/etc/ssh/sshd_config
+    owner=root
+    group=root
+    mode=0644
+  notify: restart the openssh daemon
+
+- name: start and enable the openssh daemon
+  become: true
+  service:
+    name=sshd
+    state=started
+    enabled=true
+

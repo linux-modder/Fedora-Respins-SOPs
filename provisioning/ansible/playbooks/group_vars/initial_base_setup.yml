@@ -1,0 +1,7 @@
+---
+# basic setup vars
+
+conf_users:
+  - "jon"
+  - "linuxmodder"
+  - "kk4ewt"

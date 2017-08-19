@@ -1,0 +1,9 @@
+---
+# ensure the right respositories are enabled and updated
+
+- name: ensure all updates are applied
+  become: true
+  dnf:
+    name=*
+    state=latest
+  

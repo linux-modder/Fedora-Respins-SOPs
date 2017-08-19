@@ -1,0 +1,11 @@
+---
+# install base packages desired everywhere
+- name: install useful sysadmin tools
+  become: true
+  dnf:
+    name={{ item }}
+    state=latest
+  with_items:
+    - atop
+    - iftop
+    - htop

@@ -1,0 +1,7 @@
+---
+# handlers to deal with state for common operations
+- name: restart the openssh daemon
+  become: true
+  service:
+    name=sshd
+    state=restarted
