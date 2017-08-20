@@ -1,0 +1,16 @@
+This repository contains the script the SIG uses to build the torrents for the updated lives,  the script also pulls the torrent hashes after the torrents are created and passes them on through to opentracker's whitelist file.
+
+All torrents run by the Respins SIG have IP whitelisting & private tracker functionality enabled.  To remain US Export control Compliance you will also see in this repository there is a geoipsets folder which has a static unpacked tar.gz of the IP zone files for use in a geoip block that is used on ALL core seeders and is STRONGELY requested that all non team seeders use these blocks as well.  The geoip blocks are in compliance with the US Dept of Commerce EAR statements, which are subject to change.  At present (20170324 0000 UTC) Fedora is required to block IPs in complaince with: 
+
+Embargoed Destinations
+
+Red Hat's software and/or technical data may NOT be exported, re-exported or transferred, either directly or indirectly, to any country listed in Country Group E:1 in Supplement No. 1 to part 740 of the EAR (currently, Cuba, Iran, North Korea, Sudan & Syria). Please note that this list ("Embargoed Destinations") is subject to change.
+
+The build-torrents.sh script takes 2 arguments:
+
+$1 VERSION (i.e. 24 or 25)
+$2 DATE (i.e.  20170301 > F25-${spin}-x86_64-20170301.torrent
+
+For any questions or comments please file a issue ticket or PR OR find us on irc [[  ircs://chat.freenode.net/#fedora-respins ]].
+
+ 

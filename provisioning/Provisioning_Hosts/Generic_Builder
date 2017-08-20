@@ -1,0 +1,15 @@
+## Generic Builder Provisioning ##
+==================================
+
+Minimal requirements:
+
+OS: supported release of Fedora (as of July 2017 this is Fedora 25/26) 
+Disk: 75Gb (no source building)  100Gb (with source building)
+Users: fedora respins mock $USER
+Groups: respins mock hosted-content
+Packages: git pungi pykickstart fedora-kickstarts* lorax-lmc-virt lorax-lmc-novirt mock
+
+
+* Note: Fedora-kickstarts is the packaged version if using rawhide or a pre-release you must git clone https://pagure.io/fedora-kickstarts.git (or ssh+git:// if you have a ssh key on machine)
+
+

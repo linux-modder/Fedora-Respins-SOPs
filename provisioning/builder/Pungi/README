@@ -1,0 +1,10 @@
+ This directory is for making a SOURCE.iso build via pungi, a part of the releng image build tools.  While not explicitly required for the Updated ISOs, as they are the same material as the Official Gold Images, just using the updates repo, saving users bandwidth and time post install, we provide as a courtesy and as good practice as we understand some may come by and wanna do similiar and we wish to set a good example, which is also in line with best/common practice within the Open Source Community.
+
+Pungi also makes it easier to make local ISO generation as you can point livemedia-creator (or livecd-creator on supported releases up to and including the present (at time of repo generation this was Fedora 25). This step is also beneficial if you wish to make a remix assuming you point it at the default repos AND your custom package repos, as it runs repoview and createrepo which can be used later. 
+
+pungirun.sh is targeted to work with the present version used in Fedora 25 (pungi 4) for older versions of pungi changes are likely needed.
+
+The script takes 2 arguments:
+
+$1 Version to build as a number (i.e. 25)
+$2 DATE to be in the resulting ISO filename (i.e. 20170301 >  F25-source-20170301.iso)

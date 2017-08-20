@@ -1,0 +1,7 @@
+---
+# handlers to deal with maintaining the firewall
+- name: maintain the state of the firewall daemon
+  become: true
+  service:
+    name=firewalld
+    state=restarted

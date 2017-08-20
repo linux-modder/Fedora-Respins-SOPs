@@ -1,0 +1,13 @@
+---
+# handlers to deal with state for tracker operations
+- name: restart tracker (ipv4 only) daemon
+  become: true
+  service:
+    name=opentracker-ipv4
+    state=restarted
+
+- name: restart the transmission daemon
+  become: true
+  service:
+    name=transmission-daemon
+    state=restarted

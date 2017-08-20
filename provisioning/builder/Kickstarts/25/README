@@ -1,0 +1,31 @@
+This directory has pre-flattened ready to go kickstartr files (.ks) for use with livemedia-creator iso creation.  If you need to add a vanilla ks, use the ksflatten as documented here: [[ https://fedoraproject.org/wiki/Livemedia-creator-_How_to_create_and_use_a_Live_CD
+]] .
+
+These are the unmodified ones used when the SIG makes the regular updated ISOs, if you wish/have a need to modify them for personal / corporate /  special project reasons, feel free to modify these.  If this is your first time or you are otherwise new to working with kickstarts, the SIG hoghly suggests liberal use of cp flat-${spin}.ks flat-${spin}.ks.bak and the kickstart validator [[ sudo dnf install pykickstart && ksvalidator flat-${spin}.ks ]].
+
+ksvalidator flat-${spin}.ks will give output like this, mind you those shown here are expected as they are Deprecation Warnings NOT errors.
+
+**  
+[builder@localbuidler ~]$ ksvalidator /usr/share/spin-kickstarts/flat-security.ks 
+/usr/lib64/python3.5/optparse.py:999: PendingDeprecationWarning: The KSOption class is deprecated and will be removed in pykickstart-3.  Use the argparse module instead.
+  option = self.option_class(*args, **kwargs)
+_setToSelf has been renamed to set_to_self.  The old name will be removed in a future release.
+A partition with the mountpoint / has already been defined.
+add_option is deprecated and will be removed in pykickstart-3.  Use add_argument instead.
+add_option is deprecated and will be removed in pykickstart-3.  Use add_argument instead.
+add_option is deprecated and will be removed in pykickstart-3.  Use add_argument instead.
+add_option is deprecated and will be removed in pykickstart-3.  Use add_argument instead.
+
+**
+NOTE:  buildmedia-all.sh __INCLUDES__ torrent generation, buildmedia.sh is merely ISOs no torrents.
+
+This script IS NOT Multi arch, it will only build x86_64 (64 bit) ISOs as written if you need another arch add it to the scripting or ask a SIG memberfor assistance.
+
+The script takes 2 arguments:
+
+$1 VERSION to build for (i.e 25,26)
+$2 DATE to have in the filename (i.e.  20170704 > F25-${spin}-x86_64-20170704.iso 
+
+For any questions please reach out to the team on this Repo as a issue request, or if you are the IRC type like all team members are find us over in [[ ircs://chat.freenode.net/#fedora-respins ]]
+
+PRs for special events, like l10n ready made KS files or Audience Specific KS Files (Events/Conferences) are welcome.  We ask that you Fork and PR hpwever as we prevent any non SIG member from direct push access.

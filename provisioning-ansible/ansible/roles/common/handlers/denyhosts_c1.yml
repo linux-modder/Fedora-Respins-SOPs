@@ -1,0 +1,7 @@
+---
+# handlers to deal with securing the host from brute forcing attempts
+- name: maintain the denyhosts daemon
+  become: true
+  service:
+    name=denyhosts
+    state=restarted
